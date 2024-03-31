@@ -9,7 +9,7 @@ var debug = require('debug')('decordelight:server');
 var http = require('http');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/DecorDelight')
+mongoose.connect('mongodb+srv://Nency:cdmi123@cluster0.zumiotf.mongodb.net/Decor-Delight')
   .then(() => console.log('Connected!'));
 
 /**
