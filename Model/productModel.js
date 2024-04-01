@@ -13,7 +13,8 @@ var productSchema = new mongoose.Schema({
   category_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "category"
-  }
+  },
+  modelno: { type: Number }
 });
 
 module.exports = mongoose.model("product", productSchema);
