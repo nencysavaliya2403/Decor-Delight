@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var adminSchema = new mongoose.Schema({
-  username: { type: String },
+  email: { type: String },
   password: { type: String },
 });
 
