@@ -4,6 +4,7 @@ var category = require("../Controller/categoryController");
 var product = require("../Controller/productController");
 var cart = require("../Controller/cartController");
 var isLiked = require("../Controller/isLikedController");
+var admin = require("../Controller/adminController");
 
 // product routes require
 router.post("/insertProductData", product.insertProductData);
@@ -15,6 +16,10 @@ router.get("/delete_data/:id", product.delete_data);
 // category routes for product
 router.post("/insertCategoryData", category.insertCategoryData);
 router.get("/getCategoryData", category.getCategoryData);
+
+// category routes for product
+router.post("/insertadminData", admin.insertadminData);
+router.get("/getadminData", admin.getadminData);
 
 // cart routes for product
 router.post("/insertCartData", cart.insertCartData);
